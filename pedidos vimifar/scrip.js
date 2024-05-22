@@ -29,7 +29,7 @@ document.getElementById('productivityForm').addEventListener('submit', function(
         resultMessage = 'Mal. Necesitas más líneas de código para cumplir con la productividad.';
         resultClass = 'mal-animation mal';
     } else {
-        resultMessage = 'Muy Mal. Tu productividad es insuficiente.';
+        resultMessage = 'Andy te quiero muchoooooooo';
         resultClass = 'muy-mal-animation muy-mal';
     }
     
