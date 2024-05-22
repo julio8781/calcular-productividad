@@ -78,3 +78,69 @@ footer {
     padding: 10px;
 }
 
+.result-animation {
+    animation-duration: 1s;
+}
+
+.result-message {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.bien {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.medio {
+    background-color: #FFD700;
+    color: black;
+}
+
+.mal {
+    background-color: #FF6347;
+    color: white;
+}
+
+.muy-mal {
+    background-color: #8B0000;
+    color: white;
+}
+
+@keyframes bienAnimation {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes medioAnimation {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes malAnimation {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes muyMalAnimation {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.bien-animation {
+    animation-name: bienAnimation;
+}
+
+.medio-animation {
+    animation-name: medioAnimation;
+}
+
+.mal-animation {
+    animation-name: malAnimation;
+}
+
+.muy-mal-animation {
+    animation-name: muyMalAnimation;
+}
