@@ -1,4 +1,3 @@
-
 document.getElementById('productivityForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -8,9 +7,9 @@ document.getElementById('productivityForm').addEventListener('submit', function(
     
     const totalHoursWorked = hoursWorked + (minutesWorked / 60);
 
-    const linesPerHourBien = 37.5;
-    const linesPerHourMedio = 28.125;
-    const linesPerHourMal = 18.75;
+    const linesPerHourBien = 62.5; //en base a 500 lineas 
+    const linesPerHourMedio = 31.25 //en base a 500 lineas 
+    const linesPerHourMal = 20.83 //en base a 500 lineas 
 
     const requiredLinesBien = linesPerHourBien * totalHoursWorked;
     const requiredLinesMedio = linesPerHourMedio * totalHoursWorked;
