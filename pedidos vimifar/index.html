@@ -14,7 +14,29 @@
             <button onclick="location.href='botiquines.html'">Botiquines</button>
             <button onclick="location.href='rw.html'">RW</button>
         </div>
+        <p>visitas <span id="contador">0</span> veces.</p>
     </div>
     <footer>J.Alvarez M</footer>
+
+    <script>
+        // Obtener el valor actual del contador de localStorage
+        let contador = localStorage.getItem('contador');
+
+        // Si no hay un valor, inicializar el contador a 0
+        if (contador === null) {
+            contador = 0;
+        } else {
+            contador = parseInt(contador);
+        }
+
+        // Incrementar el contador
+        contador++;
+
+        // Guardar el nuevo valor en localStorage
+        localStorage.setItem('contador', contador);
+
+        // Mostrar el valor del contador en la página
+        document.getElementById('contador').innerText = contador;
+    </script>
 </body>
 </html>
